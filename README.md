@@ -9,9 +9,15 @@ We introduce a Neuro-Symbolic pipeline that uses **Genetic Programming (GP)** to
 
 ## 🚀 Key Findings
 
-1.  **Efficiency Win:** Our Hybrid models achieve **20-23% higher Efficiency Scores** ($E = \text{AUC} / \log_{10}(\text{Params})$) compared to standard "Heavy" ANNs.
-2.  **Physics Transfer:** We demonstrate that activation functions learned from Particle Physics (HIGGS) transfer successfully to Ecological tasks (Forest Cover), suggesting a shared "Geometric Grammar" in continuous scientific domains.
-3.  **Low-Compute:** Discovery requires only CPUs and 10% of the training data.
+1.  **Efficiency Win:** Our Hybrid models achieve **20-23% higher Efficiency Scores**
+
+$$
+E = \frac{\text{AUC}}{\log_{10}(\text{Params})}
+$$
+
+compared to standard "Heavy" ANNs.
+3.  **Physics Transfer:** We demonstrate that activation functions learned from Particle Physics (HIGGS) transfer successfully to Ecological tasks (Forest Cover), suggesting a shared "Geometric Grammar" in continuous scientific domains.
+4.  **Low-Compute:** Discovery requires only CPUs and 10% of the training data.
 
 ## 📂 Repository Structure
 
