@@ -132,7 +132,7 @@ All experiments use fixed random seeds (42, 43, 44) for robustness. Ensure you a
 If you use this code or find our research helpful, please cite:
 
 ```bibtex
-@article{hajbi2024neuro,
+@article{,
   title={Neuro-Symbolic Activation Discovery: Transferring Mathematical Structures from Physics to Ecology for Parameter-Efficient Neural Networks},
   author={Hajbi, Anas},
   journal={arXiv preprint arXiv:2026.XXXXX},
