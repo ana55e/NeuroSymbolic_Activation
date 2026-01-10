@@ -1,34 +1,57 @@
-# Bio-Physical Activation Discovery: Neuro-Symbolic Efficiency for Science
+# 🧬 Neuro-Symbolic Activation Discovery
 
-[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Paper](https://img.shields.io/badge/arXiv-2024.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2024.XXXXX)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-ee4c2c.svg)](https://pytorch.org/)
 
-This repository contains the official PyTorch implementation for the paper **"Bio-Physical Activation Discovery: Transferring Mathematical Structures to Enhance Neural Efficiency."**
+> **Transferring Mathematical Structures from Physics to Ecology for Parameter-Efficient Neural Networks**
 
-We introduce a Neuro-Symbolic pipeline that uses **Genetic Programming (GP)** to discover mathematical formulas from data and inject them as custom **Activation Functions** into Neural Networks. This approach bridges the gap between interpretable symbolic regression and deep learning, yielding models that are **6x smaller** than standard baselines while maintaining high accuracy.
+This repository contains the official implementation of our paper on discovering domain-specific activation functions using Genetic Programming and transferring them across scientific domains.
 
-## 🚀 Key Findings
+---
 
-1.  **Efficiency Win:** Our Hybrid models achieve **20-23% higher Efficiency Scores**
+## 📋 Abstract
 
-$$
-E = \frac{\text{AUC}}{\log_{10}(\text{Params})}
-$$
+Modern neural networks rely on generic activation functions (ReLU, GELU, SiLU) that ignore the mathematical structure inherent in scientific data. We propose **Neuro-Symbolic Activation Discovery**, a framework that uses Genetic Programming to extract interpretable mathematical formulas from data and inject them as custom activation functions.
 
-compared to standard "Heavy" ANNs.
+**Key Findings:**
+- 🎯 **Geometric Transfer**: Activation functions discovered on particle physics data successfully generalize to ecological classification
+- ⚡ **Efficiency**: 18-21% higher parameter efficiency with 5-6× fewer parameters
+- 🔬 **Interpretability**: Human-readable symbolic formulas as activation functions
 
-2.  **Physics Transfer:** We demonstrate that activation functions learned from Particle Physics (HIGGS) transfer successfully to Ecological tasks (Forest Cover), suggesting a shared "Geometric Grammar" in continuous scientific domains.
+---
 
-3.  **Low-Compute:** Discovery requires only CPUs and 10% of the training data.
+## 🚀 Key Results
 
-## 📂 Repository Structure
+| Dataset | Best Model | Accuracy | Params | Efficiency Gain |
+|---------|------------|----------|--------|-----------------|
+| HIGGS | Light ReLU | 71.0% | 4,161 | +21.2% vs Heavy |
+| Forest Cover | **Hybrid (Transfer)** | **82.4%** | 5,825 | +18.2% vs Heavy |
+| Spambase | **Hybrid (Specialist)** | **92.0%** | 6,017 | +18.0% vs Heavy |
 
-- `benchmark.py`: The main script. Runs the full experiment suite (Specialist Discovery + Transfer Learning) across 3 datasets.
-- `README.md`: This file.
+**The Transfer Phenomenon**: A formula discovered on HIGGS (`mul(cos(x), x)`) transfers to Forest Cover, outperforming ReLU, GELU, and SiLU!
+
+---
 
 ## 🛠️ Installation
 
-This project requires **PyTorch**, **scikit-learn**, **gplearn**, and **MLflow**.
+### Requirements
+
+- Python 3.8+
+- PyTorch 1.12+
+- CUDA (optional, for GPU acceleration)
+
+### Setup
 
 ```bash
-pip install torch torchvision numpy pandas scikit-learn gplearn mlflow torchinfo
+# Clone the repository
+git clone https://github.com/ana55e/NeuroSymbolic_Activation.git
+cd NeuroSymbolic_Activation
+
+# Create virtual environment (recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
