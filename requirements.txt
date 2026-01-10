@@ -1,0 +1,12 @@
+torch>=1.12.0
+torchvision
+numpy
+pandas
+scikit-learn
+gplearn==0.4.2
+matplotlib
+seaborn
+torchinfo
+requests
+tabulate   # Required for pandas markdown printing
+tqdm
