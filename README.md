@@ -1,7 +1,7 @@
 
 # 🧬 Neuro-Symbolic Activation Discovery
 
-[![Paper](https://img.shields.io/badge/arXiv-2026.XXXXX-b31b1b.svg)](https://arxiv.org/abs/2601.10740)
+[![Paper](https://img.shields.io/badge/arXiv-2026.2601-b31b1b.svg)](https://arxiv.org/abs/2601.10740)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.12+-ee4c2c.svg)](https://pytorch.org/)
